@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo de Victor Augusto Guedes Moreira</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #3d3dcc;
+        }
+
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #00ff37;
+            color: black;
+        }
+
+        .content-container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .section {
+            padding: 40px 20px;
+            margin: 40px 0;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .content {
+            line-height: 1.6;
+        }
+
+        .navbar a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .navbar a:focus {
+            outline: none;
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .name-highlight {
+            font-size: 48px;
+            color: #333;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="#contato" id="linkContato">Contato</a>
+        <a href="#sobre" id="linkSobre">Sobre</a>
+        <a href="#experiencia" id="linkExperiencia">Experiência</a>
+        <a href="#habilidades" id="linkHabilidades">Habilidades</a>
+        <a href="#educacao" id="linkEducacao">Educação</a>
+    </div>
+
+    <div class="content-container">
+
+        <div class="section" id="contato">
+            <div class="name-highlight">Victor Augusto Guedes Moreira</div>
+            <h2>Contato</h2>
+            <ul>
+                <li>Email: victor.guedesmoreira@email.com</li>
+                <li>Telefone: (19) 9 99022507</li>
+                <li>Endereço: Brasil, Hortolândia, Jd. Adelaide, Rua Dercides Ernica, 555</li>
+            </ul>
+        </div>
+
+        <div class="section" id="sobre">
+            <h2>Sobre Mim</h2>
+            <p class="content">Auxiliar de Comércio com quase 2 anos de experiência, atuando com foco no atendimento ao
+                cliente e suporte em operações comerciais. Destaca-se pela habilidade em trabalho em equipe, comunicação
+                eficaz com clientes e adaptabilidade a novos processos e ferramentas. Em formação acadêmica em Sistemas
+                de Informação pelo UNASP, está sempre em busca de aprimoramento e novas oportunidades de desenvolvimento
+                no setor.
+            </p>
+        </div>
+
+        <div class="section" id="experiencia">
+            <h2>Experiência</h2>
+            <p class="content">Auxiliar de comércio – Silvio Antonio Moreira (2023- atualmente) </p>
+        </div>
+
+        <div class="section" id="habilidades">
+            <h2>Habilidades</h2>
+            <ul class="content">
+                <li>Experiência em HTML5, CSS3, JavaScript, react-native, C++, C#.</li>
+                <li>Experiência em manutenção de computadores.</li>
+                <li>Experiência em pacote Office</li>
+                <li>Experiência em informática</li>
+                <li>Experiência em desenvolvimento de jogos</li>
+            </ul>
+        </div>
+
+        <div class="section" id="educacao">
+            <h2>Educação</h2>
+            <p class="content">Ensino médio, Colégio Anglo (2020)</p>
+            <p class="content">Curso superior, Sistemas de Informação - Unasp (Cursando, 6/8)</p>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.navbar a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                window.scrollTo({
+                    top: target.offsetTop,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
